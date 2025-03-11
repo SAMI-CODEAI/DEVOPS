@@ -1,0 +1,125 @@
+
+C:\Users\thoge>git --version
+git version 2.46.0.windows.1
+
+C:\Users\thoge>git config --global user.name "sami-codeai"
+
+C:\Users\thoge>git config --global user.email "sami.codeai@gmail.com"
+
+C:\Users\thoge>cd GitPract
+The system cannot find the path specified.
+
+C:\Users\thoge>cd..
+
+C:\Users>cd..
+
+C:\>Cd\SAMI\GitPract
+
+C:\SAMI\GitPract>mkdir Pract
+
+C:\SAMI\GitPract>cd Pract
+
+C:\SAMI\GitPract\Pract>git init
+Initialized empty Git repository in C:/SAMI/GitPract/Pract/.git/
+
+C:\SAMI\GitPract\Pract>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\SAMI\GitPract\Pract>
+
+
+
+
+
+git can create merge and delete local copies as of now
+
+
+
+
+
+C:\SAMI\GitPract\Pract>echo "hello git">hello.txt
+
+C:\SAMI\GitPract\Pract>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+# here the file is not yet commited soo we have to commit the file
+
+
+
+_______________________________________________________________________________________
+Day-2
+how to open the folder using git bash-select the folder and click shift+right click
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git init    -------------------------->opening the repository
+Reinitialized existing Git repository in C:/SAMI/GitPract/Pract/.git/
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        day-2.txt
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$
+
+#four stages of git :
+
+
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git add hello.txt    ---------------------------->sending file to staging area
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git commit -m "hioio" ---------------------------->pushing to the local repo
+[master (root-commit) 42b63da] hioio
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git commit --amend -m "commit message-2"    --------------------------->to add commit message  message after initial commit 
+[master 1f75c6d] commit message-2
+ Date: Tue Feb 18 14:51:29 2025 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git log   ---------------------------->to check the log of the commit message
+commit 1f75c6dbb2727adb7fea5f45526bbecfb2d78dcf (HEAD -> master)
+Author: sami-codeai <sami.codeai@gmail.com>
+Date:   Tue Feb 18 14:51:29 2025 +0530
+
+    commit message-2
+
+
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git remote add origin https://github.com/SAMI-CODEAI/Git-Pract.git   ------------------------------> adding the global repo
+
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git branch
+* master
+
+thoge@SAMI MINGW64 /c/SAMI/GitPract/Pract (master)
+$ git push -u origin master

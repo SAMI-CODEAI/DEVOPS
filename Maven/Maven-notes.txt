@@ -1,0 +1,17 @@
+mvn --version
+Microsoft Windows [Version 10.0.26100.3194]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\SAMI\Maven>mkdir MyMavenProject
+
+C:\SAMI\Maven>cd MyMavenProject
+
+C:\SAMI\Maven\MyMavenProject>mkdir src\main\java\com\example
+
+C:\SAMI\Maven\MyMavenProject>mkdir src\test\java\com\example
+C:\SAMI\Maven\MyMavenProject>mvn validate----
+C:\SAMI\Maven\MyMavenProject>mvn compile    |----- maven life cycle
+C:\SAMI\Maven\MyMavenProject>mvn test -------
+C:\SAMI\Maven\MyMavenProject>mvn package
+C:\SAMI\Maven\MyMavenProject>java -cp target\MyMavenProject-1.0-SNAPSHOT.jar com.example.App
+Hello, Maven!
